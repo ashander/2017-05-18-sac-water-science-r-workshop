@@ -2,18 +2,18 @@
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS EITHER.  (THANK YOU.)
 carpentry: "swc"    # what kind of Carpentry (must be either "dc" or "swc")
-venue: "State Water Board"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "Room TBA, 1001 I St, Sacramento, CA 95812"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+venue: "State Water Agencies"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "Bonderson Hearing Room, Bonderson Building, 1600 9th St, Sacramento, CA 95812. Note: Closest entry way is on O St, between 9th and 10th streets. Door is locked, but staff will be on hand to provide access."      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "38.581779,-121.492088"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
+latlng: "38.573888,-121.498198"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
 humandate: "May 18-19, 2017"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "9:00 am - 4:30 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2017-05-18 # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2017-05-19 # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Jaime Ashander", "Jason Moore"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Helpers wanted"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: ["ashander@ucla.edu", "jasonmoore@ucdavis.edu", "Constable.Daniel@DeltaCouncil.ca.gov"]    # boxed, comma-separated list of conta
+contact: ["ashander@ucla.edu", "jasonmoore@ucdavis.edu", "daniel.constable@deltacouncil.ca.gov"]    # boxed, comma-separated list of conta
 collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
@@ -82,9 +82,12 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 -->
 <p id="who">
   <strong>Who:</strong>
-  The course is aimed at select workers in water-related California State agencies.
-  Email <a href="mailto:Constable.Daniel@DeltaCouncil.ca.gov">Daniel
-	  Constable</a> for registration.
+  This course is aimed at environmental professionals working on water resources
+  for the State of California. The course is intended to give participants an
+  introduction to common tools used in data analysis, and to provide a
+  foundation for further self-learning on how to carry out analyses more quickly
+  and accurately.
+  Email <a href="mailto:daniel.constable@deltacouncil.ca.gov">Daniel Constable</a> for registration.
   <strong>You don't need to have any previous knowledge of the tools that will
     be presented at the workshop.</strong>
 </p>
@@ -127,12 +130,16 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   Modify the block below if there are any special requirements.
 -->
 <p id="requirements">
-  <strong>Requirements:</strong> Participants must bring a laptop with a
+  <strong>Requirements:</strong> The training room is not equipped with
+  computers. Participants must bring a laptop with a
   Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges
   on. They should have a few specific software packages installed (listed
   <a href="#setup">below</a>). They are also required to abide by
   Software Carpentry's
   <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
+  <strong>Delta Stewardship Council only:</strong> Staff will be provided with a laptop computer
+   with all the necessary programs installed. Due to the limited number of
+   laptops, we unfortunately cannot provide computers to staff of other agencies.
 </p>
 
 <!--
@@ -572,7 +579,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   </div>
 </div> <!-- End of 'editor' section. -->
 <div id="r"> <!-- Start of 'R' section. -->
-  <h3>R</h3>
+  <h3>R and RStudio</h3>
 
   <p>
     <a href="http://www.r-project.org">R</a> is a programming language
