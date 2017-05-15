@@ -539,14 +539,34 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
         download the <a href="{{site.swc_installer}}">Software Carpentry Windows installer</a>
         and double click on the file to run it.
         <strong>This installer requires an active internet connection.</strong>
+        To check whether nano is installed, open "Git Bash" from the start
+        menu, type <code>nano</code> in the new window, and press enter. If the response
+        is <code>nano not found</code> or something similar the installer didn't work. Try
+        reinstalling or follow the instructions below to use Notepad++ as an
+        alternative text editor.
       </p>
       <p>
-        Others editors that you can use are
-        <a href="http://notepad-plus-plus.org/">Notepad++</a> or
-        <a href="http://www.sublimetext.com/">Sublime Text</a>.
-        <strong>Be aware that you must
-          add its installation directory to your system path.</strong>
-        Please ask your instructor to help you do this.
+      To install <a href="http://notepad-plus-plus.org/">Notepad++</a> download
+      the installer and install it by clicking on it and following the prompts.
+      Then follow these instructions to integrate it with Git Bash:
+        <ol>
+          <li>Open "Git Bash" from the start menu.</li>
+          <li>Type: <code>cd</code> and press enter to make sure you are in
+              your home directory.</li>
+          <li>Type: <code>notepad .bashrc</code> and press enter. This will
+            create <code>.bashrc</coe> file in Notepad. Add the following two
+              lines of text to the file:
+              </br>
+              <code>
+                export PATH=$PATH:"C:\Program Files (x86)\Notepad++" </br>
+                alias npp=notepad++
+             </code>
+         <li>Save the file and exit Notepad.</li>
+         <li>Open a new "Git Bash" window. You should now be able to launch
+           Notepad++ by typing: <code>npp</code> and pressing enter.</li>
+        </ol>
+      If you run into trouble please come to the workshop early to get help
+      with this.
       </p>
     </div>
     <div class="col-md-4">
